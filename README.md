@@ -14,25 +14,35 @@ In our context, a false positive is identifying someone will leave when they act
 
 ## Data Overview
 The data comes from SyriaTel and includes information about their customers. The dataset has the customer's state of residence, telephone numbers and length of the account. There are columns indicating if the customer has an international plan and voicemail plan, how many voicemails they receive. The dataset includes how many minutes they spend talking, how many calls they make and how much they are charged during day, evening and night periods. Additionally, the data includes how many customer service calls each customer has made. And, the target variable, the customer's churn status. For our analysis, we will focus on the number of customer service calls each customer makes, what is each customer's total bill and if it affects the likelihood of churn and which states have the highest turn rate.
+![FirstChurn](https://user-images.githubusercontent.com/74070082/139340906-5b2f62f4-9e95-4caa-9222-47969511b6d1.png)
+
 
 ### Data Preparation
 Overall, this data set is very clean. There are no missing values or NaNs to handle. We have dropped the area code and phone numbers for the privacy of the customer. We have added the total number of domestic minutes, calls and charges to gauge the total bill's effect on turn rate.
 
+![Bills](https://user-images.githubusercontent.com/74070082/139340724-8c302231-0b00-4f85-af86-37edbbf5a24b.png)
+
+![byState](https://user-images.githubusercontent.com/74070082/139340744-1336e73c-d93b-4854-956c-8098d4ccd644.png)
+- Over 20% churn
+- Targeted Marketing Campaigns 
+
+
+![CustomerService](https://user-images.githubusercontent.com/74070082/139340852-b12cfcdc-5f9f-4173-a0d8-0609117dd873.png)
+- The graph also shows that in proportion customers who stay with the company make fewer service calls. At 4 customer service calls there is a large increase in customer churn.
 
 ## Modeling
 ## Project Analysis
 ## Navigating the Repository
 
 ```
-├── data
-│        └── bigml_59c28831336c6604c800002a.csv
-├── notebook
+├── notebooks
 │         ├──Dave
 │         └──Mellissa
 ├── images
 │         ├──Capture.JPG
 │         ├──Capture2.JPG
 │         ├──Cat plot.JPG
+│         └──
 ├── README.md
 ├── presentation.pdf
 └── notebook.ipynb
