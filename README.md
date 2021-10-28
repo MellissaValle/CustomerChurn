@@ -21,6 +21,13 @@ The data comes from SyriaTel and includes information about their customers. The
 Overall, this data set is very clean. There are no missing values or NaNs to handle. We have dropped the area code and phone numbers for the privacy of the customer. We have added the total number of domestic minutes, calls and charges to gauge the total bill's effect on turn rate.
 
 ![Bills](https://user-images.githubusercontent.com/74070082/139340724-8c302231-0b00-4f85-af86-37edbbf5a24b.png)
+Average bill for:
+- All customers - $59.45
+- Customers who stay -$58.45 
+- Customers who churn- $65.36
+
+$60 Flat rate option
+
 
 ![byState](https://user-images.githubusercontent.com/74070082/139340744-1336e73c-d93b-4854-956c-8098d4ccd644.png)
 - Over 20% churn
@@ -31,7 +38,20 @@ Overall, this data set is very clean. There are no missing values or NaNs to han
 - The graph also shows that in proportion customers who stay with the company make fewer service calls. At 4 customer service calls there is a large increase in customer churn.
 
 ## Modeling
+
+
 ## Project Analysis
+Offer discount on 4th customer service call
+- Monitor calls
+
+Provide a monthly rate option to customers
+- Monitor enrollment
+
+Target marketing campaign to high churn states
+- Monitor state churn
+
+
+
 ## Navigating the Repository
 
 ```
@@ -39,10 +59,10 @@ Overall, this data set is very clean. There are no missing values or NaNs to han
 │         ├──Dave
 │         └──Mellissa
 ├── images
-│         ├──Capture.JPG
-│         ├──Capture2.JPG
-│         ├──Cat plot.JPG
-│         └──
+│         ├──Bills.JPG
+│         ├──byState.JPG
+│         ├──CustomerService.JPG
+│         └──FirstChurn.JPG
 ├── README.md
 ├── presentation.pdf
 └── notebook.ipynb
