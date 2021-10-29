@@ -1,7 +1,6 @@
 # CustomerChurn
 ![logo](https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Syriatel_Logo.svg/1280px-Syriatel_Logo.svg.png)
 
-Resource https://www.kaggle.com/becksddf/churn-in-telecoms-dataset
 
 ## Table of Contents
 * [Business Overview](#business-overview)
@@ -19,13 +18,14 @@ The stakeholder is the telecom business. They are interested in reducing how muc
 The data contains 3333 entries and the target variable, the customer's churn status. 
 
 Overall, this data set is very clean. There are no missing values or NaNs to handle. We have dropped the area code and phone numbers for the privacy of the customer. We have added the total number of domestic minutes, calls and charges to gauge the total bill's effect on turn rate.
+Resource https://www.kaggle.com/becksddf/churn-in-telecoms-dataset
 
 ## Modeling
 
 Base on out businness problem we are looking to minimize False Negatives, so we will focus on optimizing our Model's Recall Score.
 In our context, a false positive is identifying someone will leave when they actually stay. Alternatively, a false negative would be identifying someone who will stay but they will actually leave. A false negative is much worse for our stakeholders because missing customers that will leave defeats the purpose of analyzing this data set and developing the model. Missing these customers costs the company more money than a false positive. For this reason we will need to optimize our recall score for the models.
 
-Model we tried:
+Models we tried:
 
 - Logistic Regression
 - Nearest Neighboor 
@@ -52,14 +52,10 @@ Our final model produced a 87% recall score. And, it determined 3 of the most im
 ### Business Recommendations:
 
 Offer discount on 4th customer service call
-- Monitor calls
 
 Provide a monthly rate option to customers
-- Monitor enrollment
 
 Target marketing campaign to high churn states
-- Monitor state churn
-
 
 
 ## Navigating the Repository
