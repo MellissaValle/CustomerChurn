@@ -28,7 +28,7 @@ In our context, a false positive is identifying someone will leave when they act
 Models we tried:
 
 - Logistic Regression
-- Nearest Neighboor 
+- Nearest Neighbor 
 - Decision Tree
 - XGBoost
 
